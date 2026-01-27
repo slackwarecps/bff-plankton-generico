@@ -31,7 +31,7 @@ public class PlanoController {
     public ResponseEntity<Tarefa> getById(@PathVariable Long id) {
         
 
-      // Log de mensagem simples
+        // Log de mensagem simples
         log.info("Processando requisição de teste");
 
         log.info("Processando requisição de teste");
