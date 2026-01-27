@@ -36,7 +36,17 @@ public class PlanoController {
 
         log.info("Processando requisição de teste");
 
+        if (id ==33L ) {
+            log.error("Erro simulado para id 33");
+            return ResponseEntity.status(500).build();
+        }
 
+        if (id ==44L ) {
+            log.error("RESPONSE:");
+            log.error("Erro simulado para id 44");
+            log.error("====================");
+            return ResponseEntity.status(422).build();
+        }
 
         return ResponseEntity.ok(Tarefa.builder().id(id).descricao("Tarefa Mock Detalhe").build());
     }
