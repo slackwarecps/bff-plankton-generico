@@ -39,6 +39,12 @@
 			<version>1.0.0</version>
 		</dependency>
 
+		<dependency>
+			<groupId>br.com.fabioalvaro.bffs</groupId>
+			<artifactId>lib-fabao-swagger-starter</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<plugins>
