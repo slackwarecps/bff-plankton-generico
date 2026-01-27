@@ -3,6 +3,7 @@ package br.com.fabioalvaro.bffs.bffplanktongenerico.controllers;
 import br.com.fabioalvaro.bffs.bffplanktongenerico.models.Tarefa;
 import br.com.fabioalvaro.bffs.bffplanktongenerico.services.TarefasService;
 import br.com.fabioalvaro.bffs.libfabaocommonscore.models.Resultado;
+import br.com.fabioalvaro.bffs.log.core.FabaoLog;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +14,8 @@ import java.util.List;
 @RequestMapping("/v1/planos")
 @RequiredArgsConstructor
 public class PlanoController {
+    private final FabaoLog log;
+
     private final TarefasService tarefasService;
 
     @GetMapping
@@ -26,6 +29,15 @@ public class PlanoController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Tarefa> getById(@PathVariable Long id) {
+        
+
+      // Log de mensagem simples
+        log.info("Processando requisição de teste");
+
+        log.info("Processando requisição de teste");
+
+
+
         return ResponseEntity.ok(Tarefa.builder().id(id).descricao("Tarefa Mock Detalhe").build());
     }
 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    
+    <springProperty scope="context" name="springAppName" source="spring.application.name"/>
+
+    <!-- Profile: Local/Dev (Human Readable) -->
+    <springProfile name="local,dev">
+        <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+            <encoder>
+                <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            </encoder>
+        </appender>
+    </springProfile>
+
+    <!-- Profile: Default/Prod/Infra (JSON) -->
+    <springProfile name="!local &amp; !dev">
+        <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+            <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+                <includeMdcKeyName>request_id</includeMdcKeyName>
+                <includeMdcKeyName>trace_id</includeMdcKeyName>
+                <includeMdcKeyName>app_name</includeMdcKeyName>
+                <includeMdcKeyName>path</includeMdcKeyName>
+                <includeMdcKeyName>verb</includeMdcKeyName>
+            </encoder>
+        </appender>
+    </springProfile>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>

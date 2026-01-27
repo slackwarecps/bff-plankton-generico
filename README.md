@@ -28,7 +28,7 @@ Este projeto é um Backend for Frontend (BFF) genérico construído com Spring B
 ## Tecnologias
 
 - Java 17
-- Spring Boot 4.0.2
+- Spring Boot 3.4.2
 - Maven
 
 ## Configuração de Dependências (GitHub Packages)
@@ -69,7 +69,7 @@ Para executar o projeto com as configurações padrão:
 Foi configurado um perfil local para desenvolvimento que utiliza a porta **7080**. Para executar usando este perfil:
 
 ```bash
-./mvnw spring-boot:run -Dspring-boot.run.profiles=local
+$ mvn spring-boot:run -Dspring-boot.run.profiles=local
 ```
 
 ### VS Code

@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>4.0.2</version>
+		<version>3.4.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.fabioalvaro.bffs</groupId>
@@ -42,6 +42,12 @@
 		<dependency>
 			<groupId>br.com.fabioalvaro.bffs</groupId>
 			<artifactId>lib-fabao-swagger-starter</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.fabioalvaro.bffs</groupId>
+			<artifactId>lib-fabao-commons-log</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 

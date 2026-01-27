@@ -3,7 +3,8 @@ package br.com.fabioalvaro.bffs.bffplanktongenerico.controllers;
 import br.com.fabioalvaro.bffs.bffplanktongenerico.models.Tarefa;
 import br.com.fabioalvaro.bffs.bffplanktongenerico.services.TarefasService;
 import br.com.fabioalvaro.bffs.libfabaocommonscore.models.Resultado;
-import tools.jackson.databind.ObjectMapper;
+import br.com.fabioalvaro.bffs.log.core.FabaoLog;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -29,11 +30,14 @@ class PlanoControllerTest {
     private ObjectMapper objectMapper;
 
     @Mock
+    private FabaoLog fabaoLog;
+
+    @Mock
     private TarefasService tarefasService;
 
     @BeforeEach
     void setUp() {
-        PlanoController planoController = new PlanoController(tarefasService);
+        PlanoController planoController = new PlanoController(fabaoLog, tarefasService);
         mockMvc = MockMvcBuilders.standaloneSetup(planoController).build();
         objectMapper = new ObjectMapper();
     }
