@@ -31,6 +31,31 @@ Este projeto é um Backend for Frontend (BFF) genérico construído com Spring B
 - Spring Boot 4.0.2
 - Maven
 
+## Configuração de Dependências (GitHub Packages)
+
+Este projeto utiliza dependências hospedadas no **GitHub Packages** (especificamente `lib-fabao-commons-core`). Para que o Maven consiga baixá-las, é necessário configurar a autenticação no seu arquivo `~/.m2/settings.xml`.
+
+1. Gere um **Personal Access Token (PAT)** no GitHub com o escopo `read:packages`.
+2. Adicione (ou edite) o arquivo `~/.m2/settings.xml` com o seguinte conteúdo:
+
+```xml
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <servers>
+    <server>
+      <id>github</id>
+      <username>SEU_USUARIO_GITHUB</username>
+      <password>SEU_PERSONAL_ACCESS_TOKEN</password>
+    </server>
+  </servers>
+</settings>
+```
+
+> **Nota:** O `<id>github</id>` no `settings.xml` deve corresponder ao id do repositório definido no `pom.xml`.
+
 ## Como Executar
 
 Para executar o projeto com as configurações padrão:
