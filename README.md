@@ -2,6 +2,8 @@
 
 Este projeto é um Backend for Frontend (BFF) genérico construído com Spring Boot.
 
+![alt text](doc/image.png)
+
 ## Requisitos Funcionais
 
 - **Endpoint Principal**: `/v1/planos`
@@ -127,3 +129,64 @@ Ou, se estiver usando o jar diretamente:
 ```bash
 java -jar target/bff-plankton-generico-0.0.1-SNAPSHOT.jar --spring.profiles.active=local
 ```
+
+## SOBRE O PLANKTON
+
+O Sheldon J. Plankton, mais conhecido apenas como Plankton, é o principal antagonista (e às vezes anti-herói) do desenho Bob Esponja Calça Quadrada.
+
+Aqui está um resumo do que define esse personagem, Fabão:
+
+1. O Pequeno Gênio do Mal
+Apesar de ser um copépode minúsculo, o Plankton tem um ego gigante e um intelecto de "cientista louco". Ele é o proprietário do restaurante Balde de Lixo (Chum Bucket), que fica estrategicamente posicionado em frente ao Siri Cascudo.
+
+2. O Objetivo de Vida
+Toda a existência do Plankton gira em torno de um único objetivo: roubar a fórmula secreta do Hambúrguer de Siri. Ele acredita que, se conseguir a receita, o Balde de Lixo finalmente terá clientes e ele poderá dominar a Fenda do Biquíni (e, quem sabe, o mundo).
+
+3. Relacionamentos
+Karen Plankton: Ele é "casado" com uma supercomputadora que ele mesmo construiu. Karen é, muitas vezes, o verdadeiro cérebro por trás dos planos, embora o Plankton raramente dê o braço a torcer.
+
+Sr. Siriguejo: Eles são arqui-inimigos, mas o detalhe interessante é que, na infância, eles eram melhores amigos. A rivalidade surgiu justamente por causa de uma briga pela receita do hambúrguer que criaram juntos.
+
+4. Curiosidades que combinam com o seu perfil:
+Tecnologia: O Plankton é basicamente um engenheiro autodidata de mão cheia. Ele constrói robôs complexos, dispositivos de controle mental e laboratórios inteiros em um espaço minúsculo. Se ele fosse do nosso mundo, com certeza estaria automatizando tudo com Docker e Kubernetes (embora provavelmente para fins malignos).
+
+Resiliência: Mesmo falhando em todos os episódios há décadas, ele nunca desiste. É o exemplo máximo de persistência em um projeto.
+
+O Balde de Lixo nunca tem clientes porque a comida é horrível (literalmente isca de peixe), mas o Plankton prefere gastar energia em planos mirabolantes de infraestrutura e espionagem do que simplesmente trocar o menu.
+
+## PRINCIPAIS ACOES 
+
+As ações do Plankton são quase sempre pautadas por uma mistura de engenhosidade técnica e total falta de ética. Ele opera como um verdadeiro "engenheiro de gambiarras e planos mirabolantes".
+
+Aqui estão as principais estratégias e ações que ele repete ao longo da série:
+
+1. Espionagem Industrial e Infiltração
+O Plankton é o mestre do phishing e do disfarce físico.
+
+Disfarces: Ele já se vestiu de nota de dinheiro, de bebê, de Gary e até de vovó para entrar no Siri Cascudo.
+
+Infiltração Cibernética: Ele frequentemente usa dispositivos tecnológicos para hackear os sistemas de segurança do Sr. Siriguejo ou até mesmo o cérebro dos outros (como quando ele controlou o Bob Esponja de dentro da cabeça dele usando um controle remoto).
+
+2. Engenharia e Construção de Robôs
+Se o Plankton fosse para o LinkedIn, ele seria um Engenheiro de Robótica Sênior.
+
+Duplicatas: Ele cria versões robóticas dos personagens (incluindo uma do Sr. Siriguejo e uma dele mesmo) para enganar o Bob Esponja.
+
+Mechas de Combate: Quando a sutileza falha, ele constrói robôs gigantes para tentar tomar a Fenda do Biquíni à força, especialmente nos filmes.
+
+3. Planos de Dominação Mundial (ou Municipal)
+Embora queira a fórmula, o objetivo final dele é frequentemente o poder absoluto.
+
+O Plano Z: No primeiro filme, ele finalmente consegue roubar a coroa do Rei Netuno, incriminar o Sr. Siriguejo e instalar dispositivos de controle mental em todos os habitantes da Fenda do Biquíni, transformando a cidade em "Planktonópolis".
+
+4. Marketing Agressivo (e Fracassado)
+Ele tenta, de tempos em tempos, fazer o Balde de Lixo funcionar de forma legítima, mas sempre com um toque de manipulação.
+
+Brindes Gratuitos: Ele já tentou atrair clientes distribuindo "baldes de isca" ou criando slogans chamativos, mas como a comida é intragável, a retenção de usuários é zero.
+
+5. Alianças Temporárias
+Plankton é pragmático. Ele sabe quando não consegue vencer sozinho.
+
+Parceria com o Bob Esponja: Em alguns episódios, ele finge amizade (ou é forçado a ela) para conseguir o que quer.
+
+A "Legião do Mal": Ele ocasionalmente tenta unir outros vilões menores da Fenda do Biquíni, mas o ego dele geralmente implode o grupo.
