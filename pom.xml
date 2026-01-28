@@ -61,5 +61,11 @@
 		</plugins>
 	</build>
 
-	
+	<repositories>
+		<repository>
+			<id>github</id>
+			<url>https://maven.pkg.github.com/slackwarecps/*</url>
+		</repository>
+	</repositories>
+
 </project>
